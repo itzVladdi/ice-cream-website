@@ -1,0 +1,30 @@
+@import './utils/visually-hidden';
+@import './utils/mixins';
+
+@import './base/variables';
+@import './base/common';
+@import './base/base-options';
+@import './base/animations';
+
+@import './components/backdrop';
+@import './components/logo';
+@import './components/buttons';
+@import './components/section';
+@import './components/container';
+@import './components/titles';
+@import './components/hamburgers';
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/products';
+@import './layout/about';
+@import './layout/advantages';
+@import './layout/gallery';
+@import './layout/customer-reviews';
+@import './layout/contacts';
+@import './layout/footer';
+@import './layout/gallery';
+
+@import '../node_modules/hamburgers/_sass/hamburgers/hamburgers';
+
+@import '../../node_modules/swiper/swiper-bundle.css';

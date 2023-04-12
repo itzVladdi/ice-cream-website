@@ -1,0 +1,177 @@
+<section class="section contacts__section">
+    <div class="container contacts__container">
+        <h2 id="contact" class="visually-hidden">Our contacts</h2>
+        <ul class="contacts__list">
+            <li class="contacts__card">
+                <p class="contacts__subtitle">cafe</p>
+                <div class="contacts__text-block">
+                    <p class="contacts__text--city">Chicago</p>
+                    <a
+                        class="contacts__text--address"
+                        href="https://www.google.com.ua/maps/place/10340+Ridgeland+Ave,+Chicago+Ridge,+IL+60415,+%D0%A1%D0%A8%D0%90/@41.7034056,-87.7819292,17z/data=!3m1!4b1!4m5!3m4!1s0x880e39ad302b2c19:0xc808e9b14d04eb2b!8m2!3d41.7034016!4d-87.7797405?hl=ru"
+                        target="_blank">
+                        10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA
+                    </a>
+                </div>
+                <div class="contacts__text-block">
+                    <p class="">Monday - Friday</p>
+                    <p class="contacts__text--grey">06:00 AM - 10:00 PM</p>
+                    <p class="">Saturday - Sunday</p>
+                    <p class="contacts__text--grey">08:00 AM - 16:00 PM</p>
+                </div>
+                <div class="contacts__text-block">
+                    <a class="contacts__link" href="tel:+380961111111">
+                        <p class="contacts__text--contact">+61(0) 383 766 284</p>
+                    </a>
+                    <a class="contacts__link" href="mailto:info@devstudio.com">
+                        <p class="contacts__text--contact">noreply@envato.com</p>
+                    </a>
+                </div>
+            </li>
+            <li class="contacts__card">
+                <p class="contacts__subtitle">FOODTRUCK</p>
+                <div class="contacts__text-block">
+                    <p class="contacts__text--city">Los Angeles</p>
+                    <a
+                        class="contacts__text--address"
+                        href="https://www.google.com/maps/place/1003+Manhattan+Ave,+Manhattan+Beach,+CA+90266,+%D0%A1%D0%A8%D0%90/@33.8835263,-118.4103286,17z/data=!3m1!4b1!4m5!3m4!1s0x80c2b3eca6743829:0x98448969b9b4373d!8m2!3d33.8835263!4d-118.4103286"
+                        target="_blank">
+                        1003 Manhattan Ave, Manhattan Beach, CA&nbsp;90263, USA
+                    </a>
+                </div>
+                <div class="contacts__text-block">
+                    <p class="">Monday - Friday</p>
+                    <p class="contacts__text--grey">06:00 AM - 10:00 PM</p>
+                    <p class="">Saturday - Sunday</p>
+                    <p class="contacts__text--grey">08:00 AM - 16:00 PM</p>
+                </div>
+                <div class="contacts__text-block">
+                    <a class="contacts__link" href="tel:+380961111111">
+                        <p class="contacts__text--contact">+61(0) 383 766 284</p>
+                    </a>
+                    <a class="contacts__link" href="mailto:info@devstudio.com">
+                        <p class="contacts__text--contact">noreply@envato.com</p>
+                    </a>
+                </div>
+            </li>
+            <li class="contacts__card">
+                <p class="contacts__subtitle">cafe</p>
+                <div class="contacts__text-block">
+                    <p class="contacts__text--city">New York</p>
+                    <a
+                        class="contacts__text--address"
+                        href="https://www.google.com/maps/place/726+Sterling+Pl,+Brooklyn,+NY+11216,+%D0%A1%D0%A8%D0%90/@40.6726978,-73.9569227,17z/data=!3m1!4b1!4m5!3m4!1s0x89c25b9e1735b38f:0xb5fe454b88e9c2c0!8m2!3d40.6726938!4d-73.954734"
+                        target="_blank"
+                        >726 Sterling Pl, Brooklyn, NY 11222, USA</a
+                    >
+                </div>
+                <div class="contacts__text-block">
+                    <p class="">Monday - Friday</p>
+                    <p class="contacts__text--grey">06:00 AM - 10:00 PM</p>
+                    <p class="">Saturday - Sunday</p>
+                    <p class="contacts__text--grey">08:00 AM - 16:00 PM</p>
+                </div>
+                <div class="contacts__text-block">
+                    <a class="contacts__link" href="tel:+380961111111">
+                        <p class="contacts__text--contact">+61(0) 383 766 284</p>
+                    </a>
+                    <a class="contacts__link" href="mailto:info@devstudio.com">
+                        <p class="contacts__text--contact">noreply@envato.com</p>
+                    </a>
+                </div>
+            </li>
+        </ul>
+        <div class="contacts__buttons">
+            <button data-btn="locations" type="button" class="button contacts__button">
+                Our Locations
+                <svg data-btn="locations" class="contacts__icon" width="12" height="12">
+                    <use data-btn="locations" href="./images/icons.svg#icon-arrow-on-buttons"></use>
+                </svg>
+            </button>
+            <button
+                data-btn="franchise"
+                type="button"
+                class="button contacts__button contacts__button--transparent">
+                Franchise
+                <svg data-btn="franchise" class="contacts__icon" width="12" height="12">
+                    <use data-btn="franchise" href="./images/icons.svg#icon-arrow-on-buttons"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div class="backdrop is-hidden" id="locations">
+        <div class="modal_locations">
+            <button type="button" class="locations__close-button close-button" data-btn="close">
+                <svg class="modal__close-icon close-icon" data-btn="close">
+                    <use href="./images/icons.svg#icon-close-modal" data-btn="close"></use>
+                </svg>
+            </button>
+            <h3 class="locations__title">Our Locations</h3>
+            <div class="locations__map"></div>
+            <button type="button" class="button locations__button">Open map</button>
+        </div>
+    </div>
+
+    <div class="backdrop is-hidden" id="franchise">
+        <div class="modal_franchise">
+            <button type="button" class="franchise__close-button close-button" data-btn="close">
+                <svg class="modal__close-icon close-icon" data-btn="close">
+                    <use href="./images/icons.svg#icon-close-modal" data-btn="close"></use>
+                </svg>
+            </button>
+            <h3 class="franchise__title">
+                Thank you for your interest in owning an Ice Cream shop
+            </h3>
+            <p class="franchise__text">
+                Due to the overwhelming volume of franchise requests we are not accepting new
+                franchisee applications at this time. Once the application process resumes, we will
+                contact you for further information. Please fill out the contact information below
+                and we will reach out for additional information. We appreciate your patience.
+            </p>
+            <form class="modal__form">
+                <div class="modal__form-field">
+                    <label class="modal__form-text" for="name"></label>
+                    <input
+                        class="modal__form-input"
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Name" />
+                </div>
+
+                <div class="modal__form-field">
+                    <label class="modal__form-text" for="tel"></label>
+                    <input
+                        class="modal__form-input"
+                        type="tel"
+                        name="tel"
+                        id="tel"
+                        placeholder="Phone" />
+                </div>
+
+                <div class="modal__form-field">
+                    <label class="modal__form-text" for="tel"></label>
+                    <input
+                        class="modal__form-input"
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Email" />
+                </div>
+
+                <div class="modal__form-field modal__form-field--indent-size">
+                    <label class="modal__form-text" for="comment"></label>
+                    <textarea
+                        class="modal__form-textarea"
+                        name="comment"
+                        id="comment"
+                        rows="8"
+                        placeholder="Comment"></textarea>
+                </div>
+                <div class="modal__submit-body">
+                    <button class="modal__submit-button button" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

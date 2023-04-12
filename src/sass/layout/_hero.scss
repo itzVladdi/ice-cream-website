@@ -1,0 +1,334 @@
+.main {
+    background-color: $main-background-color;
+}
+
+.hero {
+    position: relative;
+
+    padding-top: 61px;
+    padding-bottom: 239px;
+
+    overflow: hidden;
+
+    @media screen and (max-width: 767px) {
+        max-width: 320px;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-top: 36px;
+        padding-bottom: 193px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 45px;
+        padding-bottom: 332px;
+    }
+}
+
+.hero__title {
+    margin-bottom: 32px;
+
+    font-family: $font-family-secondary;
+    font-size: 26px;
+    line-height: 1.27;
+    font-weight: normal;
+
+    color: $text-color-light;
+
+    @media screen and (min-width: 768px) {
+        max-width: 181px;
+        margin-bottom: 20px;
+
+        font-size: 18px;
+        line-height: 1.28;
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 367px;
+        margin-bottom: 28px;
+
+        font-size: 38px;
+        line-height: 1.26;
+    }
+}
+
+.hero__bigger-part {
+    font-size: 34px;
+    line-height: 0.97;
+
+    @media screen and (min-width: 768px) {
+        font-size: 24px;
+        line-height: 0.54;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 38px;
+        line-height: 1.26;
+    }
+}
+
+.hero__list {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 24px;
+
+    @media screen and (min-width: 1200px) {
+        min-height: 42px;
+    }
+}
+
+.hero__button-products {
+    padding: 7px 12px;
+
+    font-size: 8px;
+    line-height: 1.25;
+    font-weight: 600;
+    text-decoration: none;
+
+    color: $text-color-dark;
+
+    background-color: transparent;
+    border: 2px solid $accent-color;
+    border-radius: 10px;
+
+    transition: color $main-animation, border $main-animation;
+
+    @media screen and (min-width: 1200px) {
+        padding: 12px 34px;
+
+        font-size: 14px;
+        line-height: 1.29;
+    }
+
+    &:hover {
+        border: 2px solid $hover-color;
+    }
+
+    &:focus {
+        color: $text-color-light;
+
+        border: 2px solid $hover-color;
+        outline: transparent;
+    }
+}
+
+.hero__button-how {
+    padding: 7px 12px;
+
+    font-size: 8px;
+    line-height: 1.25;
+    font-weight: 600;
+
+    color: $accent-color;
+    background-color: transparent;
+    border-radius: 10px;
+    border: none;
+
+    transition: color $main-animation;
+
+    @media screen and (min-width: 1200px) {
+        padding: 12px 22px;
+
+        font-size: 14px;
+        line-height: 1.21;
+    }
+
+    &:hover {
+        color: $hover-color;
+    }
+
+    &:focus {
+        color: $text-color-light;
+        outline: transparent;
+    }
+}
+
+.hero__arrow-body {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+        bottom: 62px;
+        left: 210px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        bottom: 125px;
+        left: 255px;
+    }
+}
+
+.hero__text {
+    max-width: 151px;
+    height: auto;
+
+    font-size: 12px;
+    line-height: 1.42;
+
+    color: $text-color-light;
+
+    @media screen and (min-width: 1200px) {
+        max-width: 220px;
+
+        font-size: 14px;
+    }
+}
+
+.hero__button-arrow {
+    position: absolute;
+
+    margin-top: 20px;
+
+    background-color: transparent;
+    border: transparent;
+    outline: transparent;
+
+    &:hover .hero__button-hov {
+        opacity: 1;
+    }
+
+    &:hover .hero__button-simple {
+        opacity: 0;
+    }
+
+    &:focus .hero__button-foc {
+        opacity: 1;
+    }
+
+    &:focus .hero__button-simple {
+        opacity: 0;
+    }
+}
+
+.button-arrow {
+    position: absolute;
+    left: 0;
+
+    fill: $text-color-light;
+
+    transition: opacity $main-animation;
+}
+
+.hero__button-simple {
+    opacity: 1;
+}
+
+.hero__button-hov {
+    opacity: 0;
+}
+
+.hero__button-foc {
+    margin-top: -4px;
+
+    opacity: 0;
+}
+
+.hero__image-item {
+    pointer-events: none;
+}
+
+.hero__image-plate {
+    position: absolute;
+    z-index: 1;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-top: 28px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 42px;
+    }
+}
+
+.hero__image-circles {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+
+.hero__image-ice {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+
+    @media screen and (max-width: 767px) {
+        left: 85px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        left: 420px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        left: 650px;
+    }
+}
+
+.hero__sales {
+    position: absolute;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+        top: 30px;
+        right: 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        top: 40px;
+        right: 16px;
+    }
+}
+
+.hero__item-sales {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 16px;
+    }
+}
+
+.hero__number-sales {
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 1.21;
+
+    color: $text-color-dark;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 46px;
+    }
+}
+
+.hero__text-sales {
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 4px;
+
+    font-size: 8px;
+    line-height: 1.25;
+    text-align: right;
+
+    color: $text-color-light;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.21;
+    }
+}

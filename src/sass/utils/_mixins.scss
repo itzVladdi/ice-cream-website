@@ -1,0 +1,10 @@
+@mixin text-design($fw, $fs, $lh, $ls) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    letter-spacing: $ls;
+}
+
+@mixin media-screen($mw) {
+    @media screen and (min-width: $mw) { @content; }
+}

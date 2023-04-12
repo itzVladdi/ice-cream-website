@@ -1,0 +1,120 @@
+<header class="header" id="header">
+    <div class="container nav">
+        <h2 class="visually-hidden">Our website</h2>
+        <a class="company__logo-link" href="./" aria-label="link to main section">
+            <img
+                class="company__logo-pic"
+                srcset="
+                    ./images/header/logo.png             48w,
+                    ./images/header/logo@2x.png          96w,
+                    ./images/header/logo-desktop.png     60w,
+                    ./images/header/logo-desktop@2x.png 120w
+                "
+                sizes="(min-width: 1200px) 60px, (min-width: 320px) 48px, 100vw"
+                src="./images/header/logo.png"
+                alt="ice cream logo" />
+        </a>
+        <button
+            class="hamburger hamburger--elastic"
+            type="button"
+            data-menu-btn
+            aria-label="Вызов мобильного меню">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <div class="nav__buy-body">
+            <button data-btn="buy" type="button" class="nav__buy-button button">
+                Buy now
+                <svg class="nav__buy-icon" width="12" height="12">
+                    <use href="./images/icons.svg#icon-arrow-on-buttons"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="nav__body" data-mobile-menu>
+            <nav>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#header" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">How it’s made?</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#products" class="nav__link">Our products</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="nav__button-body">
+                <button data-btn="buy" data-modal-open type="button" class="nav__button-buy button">
+                    Buy now
+                    <svg class="nav__icon-buy" width="12" height="12">
+                        <use href="./images/icons.svg#icon-arrow-on-buttons"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="backdrop is-hidden" id="buy">
+        <div class="modal">
+            <button class="modal__close-button close-button" type="button">
+                <svg class="modal__close-icon close-icon" width="20" height="20" data-btn="close">
+                    <use href="./images/icons.svg#icon-close-modal"></use>
+                </svg>
+            </button>
+            <form class="modal__form">
+                <strong class="modal__title">Buy now</strong>
+                <div class="modal__image-body">
+                    <button type="button" class="modal__image-button modal__image-button--green">
+                        ICE CREAM
+                    </button>
+                    <button type="button" class="modal__image-button modal__image-button--yellow">
+                        ICE COFFEE
+                    </button>
+                    <button type="button" class="modal__image-button modal__image-button--brown">
+                        MILKSHAKE
+                    </button>
+                </div>
+                <div class="modal__form-down">
+                    <div class="modal__form-field">
+                        <label class="modal__form-text" for="name"></label>
+                        <input
+                            class="modal__form-input"
+                            type="text"
+                            name="username"
+                            placeholder="Name" />
+                    </div>
+                    <div class="modal__form-field">
+                        <label class="modal__form-text" for="tel"></label>
+                        <input
+                            class="modal__form-input"
+                            type="tel"
+                            name="usertel"
+                            placeholder="Phone" />
+                    </div>
+                    <div class="modal__form-field modal__form-field--indent-size">
+                        <label class="modal__form-text" for="comment"></label>
+                        <textarea
+                            class="modal__form-textarea"
+                            name="usercomment"
+                            rows="8"
+                            placeholder="Comment"></textarea>
+                    </div>
+                    <div class="modal__submit-body">
+                        <button class="modal__submit-button button" type="submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="scroll-up" class="isShowBtn isShowBtn--hide">
+        <i>
+            <svg class="scroll-up-icon" width="30" height="30">
+                <use href="./images/icons.svg#icon-scroll-up"></use>
+            </svg>
+        </i>
+    </div>
+</header>
